@@ -87,8 +87,8 @@ void AdminFunctionMenu() {
             cin.ignore();
             cout << "\nEmployee ID: ";
             _strUserName = printUserName();
-            if (ichoice == 1) { admin.removePermanent(_strUserName); cout << "\nRemove Success\n"; }
-            else if (ichoice == 2) { admin.removeTemporary(_strUserName); cout << "\nRemove Success\n"; }
+            if (ichoice == 1) admin.removePermanent(_strUserName); 
+            else if (ichoice == 2) admin.removeTemporary(_strUserName); 
             else cout << "\nNone Option\n";
             system("pause");
             break;
