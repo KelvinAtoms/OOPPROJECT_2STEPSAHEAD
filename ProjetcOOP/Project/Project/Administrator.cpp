@@ -99,7 +99,7 @@ void Administrator::removePermanent(string _strID) {
 	file.open("Permanent.txt", ios::out);
 	for (int iCount = 0; iCount < iSize; iCount++)PermanentList[iCount].printFull(file);
 	file.close();
-
+	cout << "\nRemove Success\n";
 }
 void Administrator::removeTemporary(string _strID) {
 	Temporary Temp;
@@ -128,7 +128,7 @@ void Administrator::removeTemporary(string _strID) {
 	file.open("Temporary.txt", ios::out);
 	for (int iCount = 0; iCount < iSize; iCount++)TemporaryList[iCount].printFull(file);
 	file.close();
-
+	cout << "\nRemove Success\n";
 }
 void Administrator::searchPermanent(string _strID) {
 	Permanent Perm;
